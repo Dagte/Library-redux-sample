@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1,
+    "title": "The Great Gatsby",
+    "author": "F. Scott Fitzgerald",
+    "publishingDate": "1925-04-10",
+    "genre": "Tragedy"
+  },
+  {
+    "id": 2,
+    "title": "To Kill a Mockingbird",
+    "author": "Harper Lee",
+    "publishingDate": "1960-07-11",
+    "genre": "Southern Gothic"
+  },
+  {
+    "id": 3,
+    "title": "1984",
+    "author": "George Orwell",
+    "publishingDate": "1949-06-08",
+    "genre": "Dystopian"
+  },
+  {
+    "id": 4,
+    "title": "Pride and Prejudice",
+    "author": "Jane Austen",
+    "publishingDate": "1813-01-28",
+    "genre": "Romance"
+  },
+  {
+    "id": 5,
+    "title": "The Lord of the Rings",
+    "author": "J.R.R. Tolkien",
+    "publishingDate": "1954-07-29",
+    "genre": "Fantasy"
+  }
+]
