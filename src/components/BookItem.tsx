@@ -1,6 +1,7 @@
 import {Book} from "../type/Book.ts";
 import {useDispatch, useSelector} from 'react-redux';
-import {cartActions, CartState} from '../slices/cartSlice.tsx';
+import {cartActions} from '../slices/cartSlice.tsx';
+import {RootState} from "../type/State.ts";
 
 interface BookItemProps {
     book: Book;
@@ -11,7 +12,7 @@ const styleActive = {backgroundColor: '#FFF8DC', color: 'black'}
 const styleOnLoan = {backgroundColor: 'bisque', color: 'black'}
 
 const BookItem = ({book, onLoan}: BookItemProps) => {
-    const ids: number[] = useSelector((state: CartState) => state.idsInInterface);
+    const ids: number[] = useSelector((state: RootState) => state.cart.idsInInterface);
     const dispatch = useDispatch();
 
     const handleAddToCart = () => {

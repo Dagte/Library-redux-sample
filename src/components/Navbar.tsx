@@ -1,10 +1,11 @@
 import {useSelector} from "react-redux";
-import {CartState} from "../slices/cartSlice.tsx";
+// import {CartState} from "../slices/cartSlice.tsx";
+import {RootState} from "../type/State";
 import {Link} from 'react-router-dom';
 
 
 const Navbar = () => {
-    const ids: number[] = useSelector((state: CartState) => state.idsInInterface);
+    const ids: number[] = useSelector((state: RootState) => state.cart.idsInInterface);
 
     return (
         <nav className="navbar navbar-expand-lg navbar-light bg-light">

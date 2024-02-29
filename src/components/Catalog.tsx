@@ -1,11 +1,11 @@
 import {Book, CatalogProps} from "../type/Book";
 import BookItem from "./BookItem.tsx";
 import {useSelector} from "react-redux";
-import {CartState} from "../slices/cartSlice.tsx";
+import {RootState} from "../type/State";
 
 
 const Catalog = ({books}: CatalogProps) => {
-    const ids: number[] = useSelector((state: CartState) => state.idsInInterface);
+    const ids: number[] = useSelector((state: RootState) => state.cart.idsInInterface);
 
     return (
         <div>
